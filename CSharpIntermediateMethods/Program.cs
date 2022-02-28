@@ -58,3 +58,13 @@ namespace CSharpIntermediateMethods // Note: actual namespace depends on the pro
 
     }
 }
+
+
+/*
+A concept that goes hand-in-hand with the signature of a method is overloading.
+
+So basically overloading means having a method with the same name but different signatures.
+
+
+
+ */
