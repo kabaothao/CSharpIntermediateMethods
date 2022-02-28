@@ -5,13 +5,20 @@ using System;
 
 namespace CSharpIntermediateMethods // Note: actual namespace depends on the project name.
 {   
-    public class Program
+    public static class Program
     {   
 
 
         static void Main(string[] args)
         {
 
+            //var number = int.Parse("abc");
+            int number;
+            var result = int.TryParse("abc", out number); //tryparse does not throw an exception and that the reason it returns a boolean
+            if (result)
+                Console.WriteLine(number);
+            else
+                Console.WriteLine("Conversion failed");
 
 
         }
@@ -32,7 +39,7 @@ namespace CSharpIntermediateMethods // Note: actual namespace depends on the pro
             try
             {
                 var point = new Point(10, 20);
-                point.Move(null);
+                point.Move(new Point(40,60));
                 Console.WriteLine("Point is at ({0}, {1})", point.X, point.Y);
 
                 point.Move(100, 200);

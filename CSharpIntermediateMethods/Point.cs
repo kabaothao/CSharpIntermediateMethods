@@ -12,8 +12,9 @@ namespace CSharpIntermediateMethods
         public int Y;
 
         public Point(int x, int y)
-
-            this.Y = y;
+        { 
+            this.X = x;
+            this.Y= y;
         }
 
         public void Move(int x, int y)
@@ -26,9 +27,7 @@ namespace CSharpIntermediateMethods
         {
             if (newLocation == null) //defensive programming improves your 
             throw new ArgumentNullException("newLocation");
-
-            Move(newLocation.X, newLocation.Y)
-
+            Move(newLocation.X, newLocation.Y);
 
         }
 
