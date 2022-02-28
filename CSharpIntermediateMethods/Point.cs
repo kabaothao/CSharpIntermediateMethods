@@ -24,7 +24,7 @@ namespace CSharpIntermediateMethods
 
         public void Move(Point newLocation)
         {
-            if (newLocation == null) //defensive programming improves your codes
+            if (newLocation == null) //defensive programming improves your 
             throw new ArgumentNullException("newLocation");
 
             Move(newLocation.X, newLocation.Y)
